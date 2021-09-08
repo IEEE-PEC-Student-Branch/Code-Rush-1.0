@@ -1,0 +1,38 @@
+WORKOUT CHALLENGE
+
+Frank and Benjamin are best friends, who workout together everyday. Frank has a strength of F and Benjamin has a strength of B. The strength of Frank, F is already given to you. Your task is to find the number of possible values of B such that Benjamin emerges as the winner.
+
+The challenge consists of one or more turns. In each turn:
+
+1) If both F and B are even, their values get divided by 2 and the challenge proceeds with the next turn.
+2) If both F and B are odd, a tie is declared and the challenge ends.
+3) If F is even and B is odd, Frank wins the challenge.
+4) If F is odd and B is even, Benjamin wins the challenge.
+
+Find the number of possible initial values of B such that 1≤B≤F, there is no tie and Benjamin wins the challenge.
+
+
+INPUT FORMAT
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first and only line of each test case contains a single integer F
+
+OUTPUT FORMAT
+For each test case, print a single line containing one integer ― the number of values of B such that Benjamin wins the challenge.
+
+CONSTRAINTS
+1 ≤ T ≤ 10^5
+1 ≤ F ≤ 10^18
+
+Sample Input
+2
+1
+11
+
+Sample Output
+0
+5
+
+Explanation
+Example case 1: We must have F=B=1, but in this case, the challenge ends and a tie is declared in the first turn.
+
+Example case 2: If B∈{2,4,6,8,10}, then B is even and F is odd, so Benjamin wins the challenge in the first turn. Any odd value of B leads to a tie instead.
